@@ -6,9 +6,7 @@
   --background-color: #f5f4fa;
   --footer-color: #2f303a;
   --icon-color: #afb1b8;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-duration: 250ms;
-  --animation-function: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-function: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: Roboto, sans-serif;
@@ -87,10 +85,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .logo {
-  /*padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-  */
+  
   margin-right: 93px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -114,7 +109,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  transition: var(--animation-function);
+  transition: color var(--animation-function);
+
 }
 .mail-icon {
   fill: currentColor;
@@ -146,7 +142,7 @@ img {
   position: absolute;
   background-color: var(--brand-color);
   left: 0;
-  bottom:-32px;
+  bottom:-33px;
 
 
 
@@ -171,7 +167,7 @@ img {
   color: var(--text-color);
   display: flex;
   align-items: center;
-  transition: var(--animation-function);
+  transition: color var(--animation-function);
 }
 .contacts-item:not(:last-of-type) {
   margin-right: 50px;
@@ -219,11 +215,17 @@ img {
   color: var(--letter-color);
   margin-top: 30px;
   border-radius: 4px;
+  
   transition: var(--animation-function);
+ 
+  border-color: transparent;
+  padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:active {
-  background: var(--brand-color);
+  /* background: var(--brand-color); */
+  background: red;
+ 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #35a3fd;
 }
@@ -576,7 +578,8 @@ img {
   padding: 63px 24px;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 300ms linear;
+  transition-property: color;
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 
 }
