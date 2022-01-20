@@ -6,6 +6,9 @@
   --background-color: #f5f4fa;
   --footer-color: #2f303a;
   --icon-color: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+  --animation-function: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: Roboto, sans-serif;
@@ -111,8 +114,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .mail-icon {
   fill: currentColor;
@@ -169,8 +171,7 @@ img {
   color: var(--text-color);
   display: flex;
   align-items: center;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .contacts-item:not(:last-of-type) {
   margin-right: 50px;
@@ -218,8 +219,7 @@ img {
   color: var(--letter-color);
   margin-top: 30px;
   border-radius: 4px;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .hero-button:hover,
 .hero-button:active {
@@ -389,8 +389,7 @@ img {
 .card-link {
   background-color: #ffffff;
   color: var(--icon-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .card-link:hover,
 .card-link:focus {
@@ -428,8 +427,7 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--icon-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .clients-icon {
   fill: currentColor;
@@ -458,8 +456,7 @@ img {
 }
 .address-map {
   color: var(--letter-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .address-map:hover,
 .address-map:focus {
@@ -467,8 +464,7 @@ img {
 }
 .address-mail {
   color: rgba(255, 255, 255, 0.6);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .address-mail:hover,
 .address-mail:focus {
@@ -476,8 +472,7 @@ img {
 }
 .address-tel {
   color: rgba(255, 255, 255, 0.6);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .address-tel:hover,
 .address-tel:focus {
@@ -504,8 +499,7 @@ img {
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--letter-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -534,8 +528,7 @@ img {
   background: #f5f4fa;
   color: var(--accent-color);
   border-radius: 4px;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 
   /*
     test
@@ -562,8 +555,7 @@ img {
 .gallery-item {
   flex-basis:calc((100% - 90px)/ 3);
   margin: 15px;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .gallery-item:hover .gallery-content{
   transform: translateY(0);
@@ -625,8 +617,7 @@ img {
 }
 .gallery-link {
   display: block;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation-function);
 }
 .gallery-link:focus,
 .gallery-link:hover {
