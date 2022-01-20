@@ -216,18 +216,15 @@ img {
   margin-top: 30px;
   border-radius: 4px;
   
-  transition: var(--animation-function);
+  transition: background-color, box-shadow, var(--animation-function);
  
   border-color: transparent;
   padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:active {
-  /* background: var(--brand-color); */
-  background: red;
- 
+  background-color: #55a7eb;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: #35a3fd;
 }
 /*--------------FEATURES---------------*/
 
@@ -391,7 +388,7 @@ img {
 .card-link {
   background-color: #ffffff;
   color: var(--icon-color);
-  transition: var(--animation-function);
+  transition: background-color, color, var(--animation-function);
 }
 .card-link:hover,
 .card-link:focus {
@@ -429,7 +426,7 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--icon-color);
-  transition: var(--animation-function);
+  transition: color var(--animation-function);
 }
 .clients-icon {
   fill: currentColor;
@@ -458,7 +455,7 @@ img {
 }
 .address-map {
   color: var(--letter-color);
-  transition: var(--animation-function);
+  transition: color var(--animation-function);
 }
 .address-map:hover,
 .address-map:focus {
@@ -466,7 +463,7 @@ img {
 }
 .address-mail {
   color: rgba(255, 255, 255, 0.6);
-  transition: var(--animation-function);
+  transition: color var(--animation-function);
 }
 .address-mail:hover,
 .address-mail:focus {
@@ -474,7 +471,7 @@ img {
 }
 .address-tel {
   color: rgba(255, 255, 255, 0.6);
-  transition: var(--animation-function);
+  transition: color var(--animation-function);
 }
 .address-tel:hover,
 .address-tel:focus {
@@ -501,7 +498,7 @@ img {
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--letter-color);
-  transition: var(--animation-function);
+  transition: background-color, color, var(--animation-function);
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -530,7 +527,7 @@ img {
   background: #f5f4fa;
   color: var(--accent-color);
   border-radius: 4px;
-  transition: var(--animation-function);
+  transition: color, box-shadow, background-color, var(--animation-function);
 
   /*
     test
@@ -540,10 +537,8 @@ img {
 .btn-item:hover,
 .btn-item:focus,
 .btn-item:active {
-  font-family: inherit;
-  letter-spacing: 0.03em;
   color: var(--letter-color);
-  background: var(--brand-color);
+  background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -557,7 +552,7 @@ img {
 .gallery-item {
   flex-basis:calc((100% - 90px)/ 3);
   margin: 15px;
-  transition: var(--animation-function);
+  transition: transform var(--animation-function);
 }
 .gallery-item:hover .gallery-content{
   transform: translateY(0);
@@ -620,7 +615,7 @@ img {
 }
 .gallery-link {
   display: block;
-  transition: var(--animation-function);
+  transition: box-shadow var(--animation-function);
 }
 .gallery-link:focus,
 .gallery-link:hover {
